@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(227, 227, 224);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    margin: 0;
+}
+
+.destaque{
+    background-color: rgb(76, 76, 255);
+    color: rgb(227, 227, 224);
+    text-indent: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.topicos{
+    color: rgb(76, 76, 255);
+    text-align: left;
+    text-indent: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 30px;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(76, 76, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+
+.datas{
+    color: rgb(76, 76, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+mark{
+    background-color: rgb(169, 169, 255);
+}
+
+a:hover{
+    color: rgb(73, 200, 0);
+    font-size: 18px;
+}
