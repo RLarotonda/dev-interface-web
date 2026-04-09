@@ -1,0 +1,157 @@
+:root{
+    /* Cores */
+    --cor-primaria: #4C4CFF;
+    --cor-secundaria: #49C800;
+    --cor-fundo: #E3E3E0;
+    --cor-texto-claro: #E3E3E0;
+    
+    /* Medidas */
+    --header-height: 25vh;
+    --footer-height: 5vh;
+    --padding-padrao: 1.5rem; /* Padronizar os espacos laterais*/
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 0;
+}
+
+main{
+    /* Ocupar a tela toda menos o header e footer */
+    min-height: calc(100vh - var(--header-height) - var(--footer-height)); 
+    padding-bottom: 2rem;
+}
+
+.cabecalho{
+    background-image: url(imagens/background.gif);
+    background-repeat: repeat-x;
+    background-position: center;
+    min-height: var(--header-height);
+}
+
+/* Navegacao */
+.navegacao{
+    padding: 0.5rem;
+    text-align: center;
+}
+.navegacao ul{
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1rem;
+}
+.navegacao li{
+    display: block;
+    margin: 0 0.5rem;
+}
+.navegacao a{ 
+    border: 1px solid #E3E3E0;
+    padding: 0.2rem 0.5rem;      
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+.navegacao a:hover{
+    background-color: #E3E3E0;
+    color: #000;
+}
+
+/* Titulo */
+.titulo {
+    color: var(--cor-fundo);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 20vh; /* Pode crescer se quebrar a linha*/
+    padding: 2rem 1rem;
+}
+.titulo h1{
+    font-size: 5.6rem;
+    text-shadow: 3px 3px 0 black;
+    text-transform: uppercase;
+    margin: 0;
+}
+.titulo h3{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0 black;
+    margin-top: 0.5rem;
+}
+
+article ul, article ol{
+    padding-left: 4rem;
+    padding-right: var(--padding-padrao);
+}
+
+.destaque{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.5rem var(--padding-padrao);
+    margin: 2rem 0 1rem 0;
+}
+
+/* Sessao dos links */
+.mais-infos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espaco pra quebrar */
+}
+.mais-infos a{
+    padding-left: 2rem;
+    padding-right: var(--padding-padrao);
+}
+.mais-infos a:hover{
+    color: var(--cor-secundaria);
+}
+#info-esquerda{
+    flex: 1; /* Faz os blocos tentarem ocupar o mesmo espaço */
+    min-width: 30ch; /* Da tamanho base */
+    text-align: left;
+}
+#info-direita{
+    flex: 1;
+    min-width: 30ch;
+    text-align: right;
+}
+.links{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 0 var(--padding-padrao);
+}
+.datas{
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Rodape */
+#rodape{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    height: var(--footer-height); 
+    line-height: var(--footer-height);
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+#rodade p{
+    margin: 0;
+}
